@@ -1,0 +1,497 @@
+@font-face {
+    font-family: monTserrat;
+    src: url(/Fonts/Montserrat-VariableFont_wght.ttf);
+    font-family: laTo;
+    src: url(/Fonts/Lato/Lato-Regular.ttf);
+    font-family: laTolighT;
+    src: url(/Fonts/Lato/Lato-Light.ttf);
+}
+@keyframes animeT {
+    0% {
+        opacity: 0%;
+        margin-top: 200px;
+    }
+    50% {
+        opacity: 50%;
+        margin-top: 100px;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+body{
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    overflow-x: hidden;         /*Did for the map image*/
+}
+
+/*For Header*/
+
+header {
+    position: absolute;
+    background-color: #f4511e;
+    height: 390px;
+    width: 100%;
+    font-family: monTserrat;
+}
+.company {
+    color: white;
+    font-size: 63px;
+    text-align: center;
+    padding: 8% 10% 10% 10%;
+}
+.specialize {
+    margin-top: 18px;
+    font-size: 21px;
+}
+.grouping {
+    display: flex;
+}
+.emailspace {
+    display: block;
+    margin-left: 280px;
+    margin-right: auto;
+    margin-top: 22px;
+    background-color: white;
+    height: 32px;
+    width: 415px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    padding-left: 15px;
+    letter-spacing: 1px;
+    border: none;
+}
+.emailspace:active {
+    border: 1px inline rgb(0, 0, 230, 0.7);
+    outline: none;
+}
+.subscribespace {
+    height: 31px;
+    width: 95px;
+    margin-top: 22px;
+    margin-right: 300px;
+    background-color: #D9534F;
+    border-top: 2px solid #D9534F;
+    border-bottom: 2px solid #D9534F;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.subscribespace p {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 7px;
+}
+
+/*Outline and Border of Subscribe Button on click*/
+
+.subscribespace:active {
+    outline: 1px inset white;
+    border: 2px inset black;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.subscribespace:hover {
+    background-color: #d43f3a;
+}
+
+/*For the Navigation Bar*/
+
+.nav {
+    font-family: monTserrat;
+    display: block;
+    height: 50px;
+    max-width: 1366px;
+    background-color: #f4511e;
+    position: sticky;
+    top: 0;
+    align-items: center;
+}
+.logo {
+    position: absolute;
+    font-size: 18px;
+    color: white;
+    text-align: left;
+    margin-left: 7.5%;
+    margin-bottom: 10px;
+    letter-spacing: 4px;
+    cursor: pointer;
+}    
+.navbar {
+    position: absolute;
+    top: 0;
+    margin-top: 0%;
+    right: 7%;
+    color: white;
+}
+.navbar li {
+    display: block;
+    margin-top: 0%;
+    height: 20px;
+    float: left;
+    padding: 15px;
+    font-size: 12px;
+    letter-spacing: 4px;
+}
+ul a {
+    color: white;
+}
+li:active {
+    color: #f4511e;
+    background-color: white;
+}
+li:hover {
+    color: #f4511e;
+    background-color: white;
+}
+
+/*Main content*/
+/*About*/
+
+.maincontent {
+    font-family: laTo;
+}
+.aboutsection {
+    background-color: white;
+    color: black;
+    height: 1000px;
+    margin-left: 3.5vw;
+}
+.aboutcomp {
+    padding-top: 420px;
+    font-size: 24px;
+}
+h3 + p {                                        /*The p-after-h3 will be selected*/
+    font-family: laTolighT;
+    padding-top: 45px;
+    font-size: 20px;
+    padding-right: 465px;
+}
+.random {
+    padding-top: 45px;
+    line-height: 28px;
+    padding-right: 450px;
+    color: #818181;
+}
+/*Image (About section)*/
+.aboutimage {
+    display: flex;
+    float: right;
+    margin-right: 230px;
+    margin-top: -425px;
+}
+/*Get in touch button*/
+.getintouch {
+    display: inline-block;
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    padding: 12px 18px;
+    border-radius: 5px;
+}
+.getintouch:active {                            /*not working*/
+    border: 2px inline black;
+    outline: 2px inline white;
+}
+.getintouch:hover {
+    background-color: rgb(128, 128, 128, 0.3);
+    cursor: pointer;
+}
+/*Vision*/
+.greybox {
+    background-color: #F6F6F6;
+    width: 100%;
+    margin-top: -80px;
+}
+.globeimage {
+    margin-left: 50px;
+    margin-top: 50px;
+    float: left;
+    animation-name: animeT;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+.valuecontent {
+    padding-left: 470px;
+    margin-right: 80px;
+}
+.valuecontenth2 {
+    padding: 70px 0px 50px;
+}
+.missionpara {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 25px;
+}
+.visionpara {
+    color: rgb(129, 129, 129, 1);
+    padding: 40px 0px;
+    line-height: 25px;
+    font-size: 16px;
+}
+
+/*Services*/
+
+.services {
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 15px;
+}
+.servicehead {
+    font-family: laTo;
+    color: black;
+    text-align: center;
+    padding: 40px 0px;
+}
+.shead{
+    font-size: 16px;
+}
+.swwo {
+    font-size: 18px;
+}
+/*Grids*/
+.grids {
+    display: grid;
+    background-color: white;
+    grid-template-columns: auto auto auto;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.gridb {
+    text-align: center;
+    padding: 35px;
+    animation-name: animeT;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+.gridsb p {
+    font-family: laTolighT;
+    font-size: 20px;
+    color: rgb(129, 129, 129, 1);
+}
+
+/*Portfolio*/
+
+.portfolio {
+    background-color: #F6F6F6;
+    width: 100%;
+    height: 1022px;
+    text-align: center;
+}
+.portfsubh {
+    font-size: 20px;
+    margin-top: -40px;
+}
+.portfolio h2 {
+    padding: 70px 0px;
+}
+.portfgrid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 40px;
+    color: rgb(129, 129, 129, 1);
+    animation-name: animeT;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+.caption {
+    display: grid;
+    background-color: white;
+    width: 395px;
+    height: 100px;
+    margin-left: 12px;
+    margin-top: -15px;
+}
+.caption p {
+    margin-top: -15px;
+}
+/*What our customers say*/
+.wocs {
+    text-align: center;
+    margin-top: -40px;
+}
+
+/*Pricing*/
+
+.planflex {
+    display: flex;
+    padding: 60px 50px;
+    animation-name: animeT;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+.pricing {
+    text-align: center;
+    padding: 50px 0px 10px 0px;
+}
+.pmthd {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: -35px;
+}
+/*Pricing boxes*/
+.basic {
+    margin-right: 30px;
+    max-width: 395px;
+    height: 550px;
+    background-color: white;
+    border: 1px solid #f4511e;
+}
+.basic:hover {                  /*Box shadow*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.basicc {
+    background-color: #f4511e;
+    height: 120px;
+    width: 395px;
+    color: white;
+    text-align: center;
+    
+}
+.basictext {
+    font-size: 32px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    padding: 40px 0px;
+}
+.box2 {
+    color: #818181;
+    margin-top: 40px;
+    text-align: center;
+    width: 395px;
+    height: 220px;
+    border-bottom: 1px solid rgb(129, 129, 129,0.4);
+}
+.lowerbox {
+    height: 215px;
+    text-align: center; padding-top: 20px;
+}
+.dollar {
+    font-size: 32px;
+    color: #818181;
+}
+.perm {
+    color: #AAAAAA;
+    font-size: 14px;
+    padding-top: 10px;   
+}
+
+.sibutton {
+    margin-top: 20px;
+}
+.signupbutton{
+    box-sizing: border-box;                      /*Sign-up Button*/
+    display: inline-block;
+    height: 45px;
+    width: 95px;
+    text-align: center;
+    color: white;
+    font-size: large;
+    background-color: #f4511e;
+    border: 1px solid #f4511e;
+    border-radius: 7px;
+    cursor: pointer;
+    padding: 10px 0px;
+}
+.signupbutton:hover {
+    color: #f4511e;
+    background-color: white;
+}
+
+/*Contact*/
+
+.contactbox {
+    background-color: #F6F6F6;
+}
+.cnthead {
+    text-align: center;
+    font-weight: bolder;
+    padding-top: 70px;
+}
+.rectbox {
+    padding: 10px 50px;
+    height: 280px;
+    
+}
+
+.flleft {
+    color: #818181;
+    line-height: 35px;
+}
+
+.flright {
+    float: right;
+    padding-left: 50px;
+    margin-right: -30px;
+    animation-name: animeT;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+}
+.nae {
+    height: 30px;
+    width: 350px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    border: 1px solid #AAAAAA;
+    border-radius: 4px;
+}
+.cmntrz {
+    height: 110px;
+    width: 740px;
+    border: 1px solid #AAAAAA;
+    border-radius: 4px;
+    z-index: -1;
+    resize: both;
+    overflow: auto;
+}
+.formgrp {
+    padding-left: 20px;
+    color: #818181;
+}
+.nae::placeholder {
+    padding-left: 10px;
+}
+.cmntrz::placeholder {
+    padding-left: 10px;
+    position: absolute;
+    top: 10px;
+}
+
+.sndbtn {                                   /*Send Button*/
+    display: block;
+    background-color: white;
+    height: 30px;
+    width: 55px;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid #AAAAAA;
+    margin-top: 20px;
+    margin-right: 30px;
+    float: right;
+}           
+.sndbtn p {
+    margin-top: 5px;
+}
+.sndbtn:hover {
+    cursor: pointer;
+    background-color: rgb(170, 170, 170, 0.2);
+}
+.formap {
+    width: 100%;
+    height: auto;
+}
+.mapimg {
+    
+    object-fit: cover;
+}
+
+/*Footer*/
+
+.footerdiv {
+    padding: 60px 50px;
+    text-align: center;
+    color: #818181;
+}
